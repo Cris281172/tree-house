@@ -1,0 +1,681 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Montserrat', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+
+
+}
+
+.header {
+}
+
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41px 0;
+}
+
+.header .nav .header_links {
+    display: flex;
+}
+
+.header .nav .header_links .link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #777;
+    margin-left: 36px;
+}
+
+.header .nav .header_links .link:hover {
+    color: #222;
+}
+
+.header .background_color {
+    background-color: rgba(0,0,0,0.5);
+    padding: 120px 0;
+}
+.header .background_header {
+    background-image: url("img/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .background_header .title {
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+}
+
+.header .background_header .sub_title {
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: #ccc;
+    text-align: center;
+    margin-top: 43px;
+    margin-bottom: 55px;
+}
+
+.header .button_wrapper {
+    text-align: center;
+}
+
+.header .button_wrapper .button {
+    background-color: #7cc576;
+    border-radius: 120px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 22px 26px;
+
+}
+
+.header .button_wrapper .button:hover {
+    color: #222;
+    background-color: #fff;
+
+}
+
+.professional_services {
+    padding: 100px 0;
+
+}
+
+.professional_services .title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.professional_services .sub_title {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.professional_services .articles_wraper {
+    display: flex;
+}
+.professional_services .articles_wraper .article_item {
+    text-align: center;
+    padding: 20px;
+}
+
+.professional_services .articles_wraper .article_item .image_wraper{
+    margin-bottom: 40px;
+    height: 54px;
+}
+
+
+.professional_services .articles_wraper .article_item .title_paragraphs{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+}
+
+.professional_services .articles_wraper .article_item .paragraph {
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    color: #777;
+}
+
+.just_relax {
+    display:flex;
+}
+
+.just_relax .background_gear {
+    background-image: url("img/gear.png");
+    width: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.just_relax .background_sea {
+    background-image: url("img/sea.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    width: 75%;
+}
+
+.just_relax .article_item {
+    margin-left: 90px;
+}
+
+.just_relax .article_item .title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.just_relax .article_item .title .title_and {
+    color: #7cc576;
+}
+
+.just_relax .article_item .sub_title {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+    width: 35%;
+    line-height: 30px;
+}
+
+.just_relax .article_item .relax_list .list_item .icon {
+    display: inline-flex;
+    border: solid 1px #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.just_relax .article_item .relax_list .list_item {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.just_relax .article_item .button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7cc576;
+    padding: 22px 28px;
+    border-radius: 120px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.just_relax .article_item .button:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+.latest_project {
+    padding: 100px 0;
+}
+
+.latest_project .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.latest_project .sub_title {
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 90px;
+}
+.latest_project .article_item .article_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 28px;
+}
+.latest_project .article_item .title_paragraphs {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 26px;
+    width: 471px;
+    line-height: 24px;
+}
+
+.latest_project .article_item .list_item {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.latest_project .article_item .list_item .icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    border: 3px solid #000;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.latest_project .article_item .list_item .content_wrapper {
+    margin-left: 16px;
+}
+
+.latest_project .article_item .list_item .icon .icon_img {
+    width: 36px;
+}
+
+.latest_project .article_item .list_item .title_list {
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+}
+
+.latest_project .article_item .list_item .paragraph_list {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    color: #777;
+}
+
+.latest_project .article_item .description {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    width: 356px;
+}
+
+.latest_project .article_item .details {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #7cc576;
+}
+
+.latest_project .article_item .details:hover .arrow {
+    color: #222;
+}
+
+.culture_values {
+    background-color: #f9f9f9;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.culture_values .container .title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.culture_values .container .sub_title {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.culture_values .container .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+
+}
+
+.culture_values .container .wrapper .article_item{
+    text-align: center;
+}
+
+.culture_values .container .wrapper .article_item .icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+    border: 4px solid #777;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+.culture_values .container .wrapper .article_item .icon .music_icon {
+    width: 48px;
+}
+
+.culture_values .container .wrapper .article_item .icon .graph_icon{
+    width: 38px;
+}
+
+.culture_values .container .wrapper .article_item .icon .star_icon{
+    width: 50px;
+}
+
+.culture_values .container .wrapper .article_item .title_article {
+    font-weight: bold;
+    font-size: 18px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.culture_values .container .wrapper .article_item .paragraph_article {
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    color: #777;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.container .clients {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container .clients .title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .clients .sub_title {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.container .clients .article_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .clients .article_item .circle_article {
+    display: block;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    height: 220px;
+    margin-right: 48px;
+}
+
+.container .clients .article_item.reverse {
+    margin-top: 40px;
+}
+
+.container .clients .article_item.reverse .circle_article{
+    order: 2;
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+
+
+.container .clients .article_item .wrapper {
+    background-color: #f9f9f9;
+    padding: 45px 50px;
+}
+
+.container .clients .article_item.reverse .wrapper{
+    order: 1;
+}
+
+.container .clients .article_item .wrapper .paragraph_article {
+    font-family: "Roboto Slab";
+    font-size: 22px;
+    color: #777;
+    text-align: center;
+}
+.container .clients .article_item .wrapper .author_paragraph {
+    font-family: "Roboto Slab";
+    font-size: 18px;
+    color: #7cc576;
+    text-align: center;
+    margin-top: 25px;
+}
+.contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #7cc576;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .title {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size:40px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.contact .contact_us {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 11px 26px;
+    text-align: center;
+    cursor: pointer;
+}
+.contact .contact_us:hover {
+    background-color: #fff;
+    color: #7cc576;
+}
+
+.sponsors {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sponsors .logo {
+    margin-right: 50px;
+}
+
+.top_footer {
+    padding: 60px 0;
+    background-color: #222;
+}
+
+.top_footer .top_footer_item {
+    width: 33.3333%;
+}
+
+.top_footer .top_footer_item .list {
+    margin-top: 16px;
+}
+
+.top_footer .top_footer_item .title_item {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 29px;
+}
+
+.top_footer .top_footer_item .links {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    color: #ececec;
+    text-decoration: none;
+    display: flex;
+}
+
+.top_footer .top_footer_item .links .tags {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.top_footer .top_footer_item ul li .links .fas.fa-map-marker-alt.marker_icon {
+    color: #ececec;
+    font-size: 31px;
+    margin-right: 16px;
+    width: 25px;
+}
+
+.top_footer .top_footer_item ul li .links .fas.fa-mobile-alt.phone_icon{
+    font-size: 31px;
+    color: #ececec;
+    margin-right: 16px;
+    width: 25px;
+}
+
+.top_footer .top_footer_item ul li .links .far.fa-envelope.email {
+    color: #ececec;
+    margin-right: 16px;
+    font-size: 25px;
+    width: 25px;
+}
+.top_footer .top_footer_item ul li .links .far.fa-newspaper.newspaper_icon{
+    font-size: 25px;
+    color: #ececec;
+    margin-right: 16px;
+}
+
+.top_footer .top_footer_item ul li .links .fas.fa-image.image_icon{
+    font-size: 25px;
+    color: #ececec;
+    margin-right: 16px;
+}
+
+.top_footer .top_footer_item ul li .links .fas.fa-play.play_icon {
+    font-size: 21px;
+    color: #ececec;
+    margin-right: 16px;
+}
+
+.top_footer .top_footer_item ul li .links .fab.fa-twitter.twitter_icon{
+    margin-right: 16px;
+    font-size: 21px;
+}
+
+
+.top_footer .wrapper {
+    display: flex;
+}
+
+
+.bottom_footer {
+    padding: 30px 0;
+}
+
+.bottom_footer .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.bottom_footer .wrapper .copyright {
+    font-size: 14px;
+    color: #555;
+    margin-right: 125px;
+}
+
+.bottom_footer .wrapper .fab.fa-twitter.twitter_icon {
+    background-color: #222;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 12px;
+    margin-right: 10px;
+}
+
+.bottom_footer .wrapper .fab.fa-facebook-f.facebook_icon {
+    background-color: #222;
+    color:  #fff;
+    border-radius: 50px;
+    padding: 12px 15px;
+    margin-right: 10px;
+}
+
+.bottom_footer .wrapper .fab.fa-pinterest-p.printerest_icon {
+    background-color: #222;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 14px;
+    margin-right: 10px;
+}
+.bottom_footer .wrapper .fab.fa-google-plus-g.google_plus_icon {
+    background-color: #222;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 10px;
+
+}
+
+.bottom_footer .wrapper .fab.fa-twitter.twitter_icon:hover {
+    background-color: #00aced;
+}
+
+.bottom_footer .wrapper .fab.fa-facebook-f.facebook_icon:hover {
+    background-color: #3b5998;
+}
+
+.bottom_footer .wrapper .fab.fa-pinterest-p.printerest_icon:hover {
+    background-color: #cb2028;
+}
+
+.bottom_footer .wrapper .fab.fa-google-plus-g.google_plus_icon:hover {
+    background-color: #da2713;
+}
