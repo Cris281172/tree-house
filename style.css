@@ -132,8 +132,9 @@ table {
 
 .professional_services {
     padding: 100px 0;
-    opacity: 0;
-    animation-duration: 1s;
+
+    animation-duration: 2s;
+    animation-name: slideUp;
 }
 
 .professional_services .title {
@@ -704,11 +705,12 @@ table {
 .page_arrow {
     display: none;
     position: fixed;
-    right: 40px;
+    left: 50%;
+    order: 2;
     bottom: 0px;
     width: 70px;
     height: 70px;
-    transform: rotate(45deg); translateY(0);
+    transform: rotate(45deg); translateY(0); translate(-50%, -50%);
     border-top: black solid 20px;
     border-left: black solid 20px;
     -webkit-animation: moveArrow 0.6s infinite alternate ease-in-out;
