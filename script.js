@@ -18,11 +18,11 @@ const scrollToElement = e => {
         document.querySelector(`.contact`).scrollIntoView({ behavior: "smooth"});
     }
 }
-window.onscroll = () => myFunction();
+window.onscroll = () => slides();
 
 console.log(window.onscroll)
 
-const myFunction = e => {
+const slides = e => {
     if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
         arrowUp.style.display = `block`;
     }

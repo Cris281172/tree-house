@@ -54,9 +54,9 @@ table {
 
 }
 
-.header {
 
-}
+/*-------------------HEADER SECTION-------------------*/
+
 
 .header .nav {
     display: flex;
@@ -85,6 +85,7 @@ table {
     background-color: rgba(0,0,0,0.5);
     padding: 120px 0;
 }
+
 .header .background_header {
     background-image: url("img/header.png");
     background-repeat: no-repeat;
@@ -130,9 +131,12 @@ table {
 
 }
 
+
+/*-------------------PROFESSIONAL SERVICES SECTION-------------------*/
+
+
 .professional_services {
     padding: 100px 0;
-
     animation-duration: 2s;
     animation-name: slideUp;
 }
@@ -157,6 +161,7 @@ table {
 .professional_services .articles_wraper {
     display: flex;
 }
+
 .professional_services .articles_wraper .article_item {
     text-align: center;
     padding: 20px;
@@ -166,7 +171,6 @@ table {
     margin-bottom: 40px;
     height: 54px;
 }
-
 
 .professional_services .articles_wraper .article_item .title_paragraphs{
     text-transform: uppercase;
@@ -181,6 +185,10 @@ table {
     font-size: 14px;
     color: #777;
 }
+
+
+/*-------------------JUST RELAX SECTION-------------------*/
+
 
 .just_relax {
     display:flex;
@@ -214,6 +222,7 @@ table {
     text-transform: uppercase;
     margin-bottom: 45px;
 }
+
 .just_relax .article_item .title .title_and {
     color: #7cc576;
 }
@@ -244,6 +253,7 @@ table {
     color: #ccc;
     margin-bottom: 10px;
 }
+
 .just_relax .article_item .button {
     display: inline-block;
     text-decoration: none;
@@ -262,12 +272,15 @@ table {
     background-color: #fff;
 }
 
+
+/*-------------------LATEST PROJECT SECTION-------------------*/
+
+
 .latest_project {
     padding: 100px 0;
     animation-duration: 6s;
     opacity: 0;
 }
-
 
 .latest_project .title {
     text-transform: uppercase;
@@ -285,6 +298,7 @@ table {
     color: #777;
     margin-bottom: 90px;
 }
+
 .latest_project .article_item .article_title {
     text-transform: uppercase;
     font-weight: bold;
@@ -292,6 +306,7 @@ table {
     color: #222;
     margin-bottom: 28px;
 }
+
 .latest_project .article_item .title_paragraphs {
     font-family: "Roboto Slab";
     font-size: 16px;
@@ -316,6 +331,7 @@ table {
     justify-content: center;
     align-items: center;
 }
+
 .latest_project .article_item .list_item .content_wrapper {
     margin-left: 16px;
 }
@@ -358,6 +374,10 @@ table {
     color: #222;
 }
 
+
+/*-------------------CULTURE VALUES SECTION-------------------*/
+
+
 .culture_values {
     background-color: #f9f9f9;
     padding-top: 100px;
@@ -366,7 +386,7 @@ table {
     opacity: 0;
 }
 
-.culture_values .container .title {
+.culture_values .title {
     font-weight: bold;
     font-size: 40px;
     color: #222;
@@ -374,7 +394,8 @@ table {
     text-align: center;
     margin-bottom: 20px;
 }
-.culture_values .container .sub_title {
+
+.culture_values .sub_title {
     font-family: "Roboto Slab";
     font-size: 20px;
     color: #777;
@@ -382,18 +403,18 @@ table {
     text-align: center;
 }
 
-.culture_values .container .wrapper {
+.culture_values .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 50px;
 
 }
 
-.culture_values .container .wrapper .article_item{
+.culture_values .wrapper .article_item{
     text-align: center;
 }
 
-.culture_values .container .wrapper .article_item .icon {
+.culture_values  .wrapper .article_item .icon {
     width: 85px;
     height: 85px;
     border-radius: 50px;
@@ -403,26 +424,27 @@ table {
     justify-content: center;
     margin-bottom: 26px;
 }
-.culture_values .container .wrapper .article_item .icon .music_icon {
+
+.culture_values  .wrapper .article_item .icon .music_icon {
     width: 48px;
 }
 
-.culture_values .container .wrapper .article_item .icon .graph_icon{
+.culture_values  .wrapper .article_item .icon .graph_icon{
     width: 38px;
 }
 
-.culture_values .container .wrapper .article_item .icon .star_icon{
+.culture_values .wrapper .article_item .icon .star_icon{
     width: 50px;
 }
 
-.culture_values .container .wrapper .article_item .title_article {
+.culture_values .wrapper .article_item .title_article {
     font-weight: bold;
     font-size: 18px;
     color: #222;
     text-transform: uppercase;
 }
 
-.culture_values .container .wrapper .article_item .paragraph_article {
+.culture_values .wrapper .article_item .paragraph_article {
     font-family: "Roboto Slab";
     font-size: 14px;
     color: #777;
@@ -430,14 +452,18 @@ table {
     margin-top: 20px;
 }
 
-.container .clients {
+
+/*-------------------CLIENTS SECTION-------------------*/
+
+
+.clients {
     padding-top: 100px;
     padding-bottom: 100px;
     opacity: 0;
     animation-duration: 2s;
 }
 
-.container .clients .title {
+.clients .title {
     font-weight: bold;
     font-size: 40px;
     color: #222;
@@ -446,7 +472,7 @@ table {
     margin-bottom: 20px;
 }
 
-.container .clients .sub_title {
+.clients .sub_title {
     font-family: "Roboto Slab";
     font-size: 20px;
     color: #777;
@@ -454,13 +480,13 @@ table {
     margin-bottom: 90px;
 }
 
-.container .clients .article_item {
+.clients .article_item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container .clients .article_item .circle_article {
+.clients .article_item .circle_article {
     display: block;
     width: 400px;
     border-radius: 50%;
@@ -469,40 +495,44 @@ table {
     margin-right: 48px;
 }
 
-.container .clients .article_item.reverse {
+.clients .article_item.reverse {
     margin-top: 40px;
 }
 
-.container .clients .article_item.reverse .circle_article{
+.clients .article_item.reverse .circle_article{
     order: 2;
     margin-right: 0;
     margin-left: 40px;
 }
 
-
-
-.container .clients .article_item .wrapper {
+.clients .article_item .wrapper {
     background-color: #f9f9f9;
     padding: 45px 50px;
 }
 
-.container .clients .article_item.reverse .wrapper{
+.clients .article_item.reverse .wrapper{
     order: 1;
 }
 
-.container .clients .article_item .wrapper .paragraph_article {
+.clients .article_item .wrapper .paragraph_article {
     font-family: "Roboto Slab";
     font-size: 22px;
     color: #777;
     text-align: center;
 }
-.container .clients .article_item .wrapper .author_paragraph {
+
+.clients .article_item .wrapper .author_paragraph {
     font-family: "Roboto Slab";
     font-size: 18px;
     color: #7cc576;
     text-align: center;
     margin-top: 25px;
 }
+
+
+/*-------------------CONTACT SECTION-------------------*/
+
+
 .contact {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -514,6 +544,7 @@ table {
     opacity: 0;
     animation-duration: 6s;
 }
+
 .contact .title {
     text-align: center;
     font-weight: bold;
@@ -522,6 +553,7 @@ table {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
+
 .contact .contact_us {
     font-weight: bold;
     text-transform: uppercase;
@@ -533,10 +565,15 @@ table {
     text-align: center;
     cursor: pointer;
 }
+
 .contact .contact_us:hover {
     background-color: #fff;
     color: #7cc576;
 }
+
+
+/*-------------------SPONSOR SECTION-------------------*/
+
 
 .sponsors {
     padding-top: 60px;
@@ -547,9 +584,14 @@ table {
     opacity: 0;
     animation-duration: 6s;
 }
+
 .sponsors .logo {
     margin-right: 50px;
 }
+
+
+/*-------------------TOP FOOTER SECTION-------------------*/
+
 
 .top_footer {
     padding: 60px 0;
@@ -608,6 +650,7 @@ table {
     font-size: 25px;
     width: 25px;
 }
+
 .top_footer .top_footer_item ul li .links .far.fa-newspaper.newspaper_icon{
     font-size: 25px;
     color: #ececec;
@@ -635,6 +678,9 @@ table {
 .top_footer .wrapper {
     display: flex;
 }
+
+
+/*-------------------BOTTOM FOOTER SECTION-------------------*/
 
 
 .bottom_footer {
@@ -677,6 +723,7 @@ table {
     padding: 12px 14px;
     margin-right: 10px;
 }
+
 .bottom_footer .wrapper .fab.fa-google-plus-g.google_plus_icon {
     background-color: #222;
     color: #fff;
@@ -701,18 +748,17 @@ table {
     background-color: #da2713;
 }
 
-
 .page_arrow {
     display: none;
     position: fixed;
-    left: 50%;
+    right: 40px;
     order: 2;
     bottom: 0px;
-    width: 70px;
-    height: 70px;
-    transform: rotate(45deg); translateY(0); translate(-50%, -50%);
-    border-top: black solid 20px;
-    border-left: black solid 20px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg); translateY(0);
+    border-top: black solid 15px;
+    border-left: black solid 15px;
     -webkit-animation: moveArrow 0.6s infinite alternate ease-in-out;
     cursor: pointer;
 }
