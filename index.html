@@ -14,16 +14,16 @@
 <body>
 
     <div class="page_arrow"></div>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <a href="#"><img src="img/logo.png" alt="logo"></a>
                 <ol class="header_links">
-                    <li><a class="link" data-menu="1">HOME</a></li>
-                    <li><a class="link" data-menu="2">ABOUT</a></li>
-                    <li><a class="link" data-menu="3">BLOG</a></li>
-                    <li><a class="link" data-menu="4">PORTFOLIO</a></li>
-                    <li><a class="link" data-menu="5">CONTACT</a></li>
+                    <li><a class="link" href="#header">HOME</a></li>
+                    <li><a class="link" href="#professional_services">ABOUT</a></li>
+                    <li><a class="link" href="#clients">BLOG</a></li>
+                    <li><a class="link" href="#latest_project">PORTFOLIO</a></li>
+                    <li><a class="link" href="#contact">CONTACT</a></li>
                 </ol>
             </nav>
         </div>
@@ -36,7 +36,7 @@
         </div>
     </header>
     <div class="container">
-        <section class="professional_services">
+        <section class="professional_services" data-animate="slideUp" id="professional_services">
             <h2 class="title">Professional services</h2>
             <h3 class="sub_title">Proin iaculis purus consequat sem cure</h3>
             <div class="articles_wraper">
@@ -58,7 +58,7 @@
             </div>
         </section>
     </div>
-    <section class="just_relax">
+    <section class="just_relax" data-animate="slideOpacity">
         <div class="background_gear"></div>
         <div class="background_sea">
             <article class="article_item">
@@ -74,7 +74,7 @@
         </div>
     </section>
     <div class="container">
-        <section class="latest_project">
+        <section class="latest_project" data-animate="slideRight" id="latest_project">
             <h2 class="title">latest project</h2>
             <h3 class="sub_title">Proin iaculis purus consequat sem cure</h3>
             <article class="article_item">
@@ -108,7 +108,7 @@
             </article>
         </section>
     </div>
-    <section class="culture_values">
+    <section class="culture_values" data-animate="slideUp">
         <div class="container">
             <h2 class="title">culture & values</h2>
             <h3 class="sub_title">Proin iaculis purus consequat cure.</h3>
@@ -132,7 +132,7 @@
         </div>
     </section>
     <div class="container">
-        <section class="clients">
+        <section class="clients" data-animate="slideOpacity" id="clients">
             <h2 class="title">our awesome clients</h2>
             <h3 class="sub_title">Proin iaculis purus consequat cure.</h3>
             <article class="article_item">
@@ -151,17 +151,17 @@
             </article>
         </section>
     </div>
-    <section class="contact">
+    <section class="contact" data-animate="slideRight" id="contact">
         <h2 class="title">ready to talk about your next project?</h2>
         <span class="contact_us">contact us</span>
     </section>
-    <section class="sponsors">
+    <section class="sponsors" data-animate="slideOpacity">
         <div class=""><img src="img/envato-logo.png" alt="envanto" class="logo"></div>
         <div class=""><img src="img/wordpress-icon.png" alt="wordpress" class="logo"></div>
         <div class=""><img src="img/tuts-icon.png" alt="tuts" class="logo"></div>
         <div class=""><img src="img/microlancer-icon.png" alt="microlancer" class="logo"></div>
     </section>
-    <section class="top_footer">
+    <section class="top_footer" data-animate="slideUp">
         <div class="container">
             <div class="wrapper">
                 <article class="top_footer_item">
@@ -226,7 +226,7 @@
             </div>
         </div>
     </section>
-    <footer class="bottom_footer">
+    <footer class="bottom_footer" data-animate="slideOpacity">
         <div class="container">
             <div class="wrapper">
                 <h3 class="copyright">&copy Copyright 2014 FreebiesXpress.com</h3>
@@ -237,6 +237,7 @@
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
