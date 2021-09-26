@@ -5,20 +5,41 @@ const scrollToElement = e => {
     document.querySelector(e.target.getAttribute('href')).scrollIntoView({behavior: "smooth"})
 }
 
-const showScroll = () => {
-    if (window.scrollY > 350) {
-        arrowUp.style.display = `block`;
-    }
-    else{
-        arrowUp.style.display = `none`;
-    }
-}
+const barButton = document.querySelector('#bar_button');
+const logo = document.querySelector('#logo');
+const headerLinks = document.querySelector('#header_links');
+const headerItems = document.querySelectorAll('#header_links li');
+
+logo.style.display = 'block';
 
 
-const detectElementInViewport = el => {
-    const rect = el.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
-}
+barButton.addEventListener('click', () => {
+
+    if(logo.style.display === 'block'){
+        logo.style.display = 'none';
+        headerLinks.style.display = 'block';
+        headerItems.forEach(el => el.style.marginTop = '5px');
+    }
+    else {
+        logo.style.display = 'block';
+        headerLinks.style.display = 'none';
+    }
+
+})
+// const showScroll = () => {
+//     if (window.scrollY > 350) {
+//         arrowUp.style.display = `block`;
+//     }
+//     else{
+//         arrowUp.style.display = `none`;
+//     }
+// }
+//
+//
+// const detectElementInViewport = el => {
+//     const rect = el.getBoundingClientRect();
+//     return rect.top >= 0 && rect.bottom <= window.innerHeight;
+// }
 
 // const slides = e => {
 //     document.querySelectorAll('[data-animate]').forEach(element => {

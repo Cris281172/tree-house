@@ -66,6 +66,11 @@ table {
     padding: 41px 0;
 }
 
+.header .nav .fas.fa-bars{
+    cursor: pointer;
+    display: none;
+}
+
 .header .nav .header_links {
     display: flex;
 }
@@ -76,6 +81,8 @@ table {
     color: #777;
     margin-left: 36px;
     cursor: pointer;
+    transition: 0.5s;
+
 }
 
 .header .nav .header_links .link:hover {
@@ -123,7 +130,7 @@ table {
     text-decoration: none;
     text-transform: uppercase;
     padding: 22px 26px;
-
+    transition: 0.5s;
 }
 
 .header .button_wrapper .button:hover {
@@ -269,6 +276,8 @@ table {
     border-radius: 120px;
     text-transform: uppercase;
     margin-top: 40px;
+    transition: 0.5s;
+
 }
 
 .just_relax .article_item .button:hover {
@@ -371,6 +380,12 @@ table {
     text-transform: uppercase;
     text-decoration: none;
     color: #7cc576;
+
+}
+
+.latest_project .article_item .details .arrow {
+    transition: 0.5s;
+
 }
 
 .latest_project .article_item .details:hover .arrow {
@@ -564,6 +579,8 @@ table {
     padding: 11px 26px;
     text-align: center;
     cursor: pointer;
+    transition: 0.5s;
+
 }
 
 .contact .contact_us:hover {
@@ -696,6 +713,9 @@ table {
     color: #555;
     margin-right: 125px;
 }
+.bottom_footer .wrapper .fab{
+    transition: 0.5s;
+}
 
 .bottom_footer .wrapper .fab.fa-twitter.twitter_icon {
     background-color: #222;
@@ -760,10 +780,6 @@ table {
     z-index: 99999999999;
 }
 
-@-webkit-keyframes moveArrow {
-    0% { bottom: 0px; opacity: 0.6; transform: rotate(45deg) }
-    100% { bottom: 20px; opacity: 0.9; transform: rotate(45deg)}
-}
 
 
 
@@ -876,7 +892,14 @@ table {
     .header .nav .header_links {
         display: none;
     }
+    .header .nav .fas.fa-bars {
+        display: block;
+    }
+    .header .nav {
+        padding: 30px 0;
+    }
 }
+
 
 @media (max-width: 500px) {
     .just_relax .article_item {
