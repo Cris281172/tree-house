@@ -194,7 +194,6 @@ table {
 .just_relax {
     display:flex;
     animation-duration: 6s;
-    opacity: 0;
 }
 
 .just_relax .background_gear {
@@ -284,7 +283,6 @@ table {
 .latest_project {
     padding: 100px 0;
     animation-duration: 2s;
-    opacity: 0;
 }
 
 .latest_project .title {
@@ -388,7 +386,6 @@ table {
     padding-top: 100px;
     padding-bottom: 100px;
     animation-duration: 2s;
-    opacity: 0;
 }
 
 .culture_values .title {
@@ -464,7 +461,6 @@ table {
 .clients {
     padding-top: 100px;
     padding-bottom: 100px;
-    opacity: 0;
     animation-duration: 6s;
 }
 
@@ -546,7 +542,6 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     animation-duration: 2s;
 }
 
@@ -586,7 +581,6 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     animation-duration: 6s;
 }
 
@@ -601,7 +595,6 @@ table {
 .top_footer {
     padding: 60px 0;
     background-color: #222;
-    opacity: 0;
     animation-duration: 2s;
 }
 
@@ -690,7 +683,6 @@ table {
 
 .bottom_footer {
     padding: 30px 0;
-    opacity: 0;
     animation-duration: 6s;
 }
 
@@ -773,38 +765,7 @@ table {
     100% { bottom: 20px; opacity: 0.9; transform: rotate(45deg)}
 }
 
-@keyframes slideUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
 
-@keyframes slideRight {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(70%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0%);
-    }
-}
-
-@keyframes slideOpacity {
-    0% {
-        opacity: 0;
-
-    }
-    100% {
-        opacity: 1;
-
-    }
-}
 
 @media (max-width: 1400px){
     .just_relax .background_gear{
