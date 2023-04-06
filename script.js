@@ -26,50 +26,31 @@ barButton.addEventListener('click', () => {
     }
 
 })
-// const showScroll = () => {
-//     if (window.scrollY > 350) {
-//         arrowUp.style.display = `block`;
-//     }
-//     else{
-//         arrowUp.style.display = `none`;
-//     }
-// }
-//
-//
-// const detectElementInViewport = el => {
-//     const rect = el.getBoundingClientRect();
-//     return rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+
+// const arrowScroll = e => {
+//     document.querySelector(`.header`).scrollIntoView({ behavior: "smooth"});
 // }
 
-// const slides = e => {
-//     document.querySelectorAll('[data-animate]').forEach(element => {
-//        if(detectElementInViewport(element)){
-//            element.style.animationName = element.dataset.animate;
-//            element.style.opacity = 1;
-//        }
-//     })
-// }
-
-// let timeout;
-//
-//
-// window.addEventListener('scroll', () => {
-//     showScroll();
-//
-//     clearTimeout(timeout);
-//     timeout = setTimeout(slides, 100);
-//     slides()
-// });
-
-
-
-
-const arrowScroll = e => {
-    document.querySelector(`.header`).scrollIntoView({ behavior: "smooth"});
+const scrollUpVisible = e => {
+    if(window.pageYOffset > 300){
+        arrowUp.style.right = '40px';
+    }
+    else{
+        arrowUp.style.right = '-100%'
+    }
 }
+
+const scrollUpButton = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 navLinks.forEach(link => {
     link.addEventListener(`click`,scrollToElement);
 })
 
-arrowUp.addEventListener('click', arrowScroll);
+arrowUp.addEventListener('click', scrollUpButton)
+document.addEventListener('scroll', scrollUpVisible)
+scrollUpVisible();
+// arrowUp.addEventListener('click', arrowScroll);
 
